@@ -1,0 +1,139 @@
+.main {
+
+  .container {
+    height: 100%;
+  }
+
+  width: 100%;
+
+  &-bg {
+    background-color: #595959;
+    height: 75px;
+  }
+
+  &-header {
+    height: 50px;
+    background-color: #000000;
+  }
+
+  &-form {
+    width: 150px;
+    border: 1px solid rgba(133, 147, 159, 0.5);
+
+    input {
+      font: 400 12px Lato, Georgia, Helvetica, sans-serif;
+      background-color: inherit;
+      border: none;
+      color: #85939f;
+      width: calc(100% - 15px);
+      margin-left: 5px;
+    }
+
+    button {
+      color: #85939f;
+      margin-right: 5px;
+    }
+  }
+
+  &-login {
+
+    color: #85939f;
+    font-family: $font;
+    font-size: 11px;
+    font-weight: 300;
+
+    &::before {
+      content: "";
+      width: 14px;
+      height: 13px;
+      background: url("../../../img/login-icon.png");
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: #85939f;
+      text-decoration: none;
+    }
+  }
+
+  &-register {
+
+    color: #85939f;
+    font-family: $font;
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 15px;
+
+    &::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: url("../../../img/register-icon.png");
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: #85939f;
+      text-decoration: none;
+    }
+
+  }
+
+  .navbar {
+
+    padding: 0;
+    height: 100%;
+
+    &-nav {
+      height: 100%;
+    }
+
+    .nav-item {
+      height: 100%;
+      width: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      font-family: $font;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 35px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      padding: 0;
+    }
+  }
+
+  .home {
+    @include border-top(#ffae00);
+
+  }
+
+  .typography {
+    @include border-top(#fc7100);
+  }
+
+  .blog {
+    @include border-top(#e51c5e);
+  }
+
+  .pages {
+    @include border-top(#ae0f8d);
+  }
+
+  .elements {
+    @include border-top(#6d0fae);
+  }
+
+  .eccomerse {
+    @include border-top(#33227a);
+  }
+
+  .menu {
+    @include border-top(#0c8fcc);
+  }
+}

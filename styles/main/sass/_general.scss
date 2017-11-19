@@ -1,0 +1,24 @@
+$font: Oxygen, Helvetica, Georgia, sans-serif;
+
+
+
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+}
+
+@mixin border-top($color) {
+  border-top: 10px solid $color;
+
+  &:hover {
+    background-color: $color;
+    transition: 1s;
+  }
+}

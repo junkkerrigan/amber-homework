@@ -1,0 +1,60 @@
+.welcome {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 125px;
+
+  &-title {
+    color: #02baab;
+    font-family: $font;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+  }
+
+  .sub {
+    color: #fff;
+  }
+
+  button {
+    border: 2px solid #02baab;
+    border-radius: 0;
+    color: #02baab;
+    font-family: $font;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    padding: 3px 5px;
+    margin: 100px 0 150px;
+
+    &:hover {
+      background-color: #02baab;
+      border: inherit;
+    }
+
+    &:nth-child(n+1) {
+      margin-left: 30px;
+    }
+  }
+
+  .carousel-item img, .carousel-control-prev, .carousel-control-next {
+    visibility: hidden;
+  }
+
+  .carousel-indicators  {
+    width: 100px;
+    position: relative;
+    left: -6%;
+
+    li {
+      background-color: #fff;
+      background-color: #fff;
+
+      &.active {
+        background-color: #02baab;
+      }
+    }
+  }
+
+}
