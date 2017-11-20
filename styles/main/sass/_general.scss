@@ -1,4 +1,7 @@
 $font: Oxygen, Helvetica, Georgia, sans-serif;
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
 
 
 
@@ -9,9 +12,20 @@ $font: Oxygen, Helvetica, Georgia, sans-serif;
   text-decoration: none;
 }
 
-button {
+@mixin make-button($px, $py) {
   background-color: inherit;
-  border: none;
+  border: 2px solid #02baab;
+  font: 700 12px $font;
+  color: #02baab;
+  padding: $py $px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #02baab;
+    border: inherit;
+  }
 }
 
 @mixin border-top($color) {
@@ -20,5 +34,19 @@ button {
   &:hover {
     background-color: $color;
     transition: 1s;
+  }
+}
+
+@mixin separator($bg-color) {
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: 5px solid $bg-color;
+    margin: 20px auto 0;
+
+    @media (max-width: $sm) {
+      margin-top: 10px;
+    }
   }
 }

@@ -31,6 +31,8 @@
 
     button {
       color: #85939f;
+      background-color: inherit;
+      border: none;
       margin-right: 5px;
       position: relative;
       top: -2px;
@@ -79,6 +81,15 @@
       text-decoration: none;
     }
 
+  }
+
+  &-logo img {
+    @media (max-height: $lg) {
+      height: 40px;
+      object-fit: cover;
+      position: relative;
+      top: -5px;
+    }
   }
 
   .navbar {
