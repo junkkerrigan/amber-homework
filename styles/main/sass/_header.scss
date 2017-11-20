@@ -8,11 +8,11 @@
 
   &-bg {
     background-color: #595959;
-    height: 75px;
+    height: 50px;
   }
 
   &-header {
-    height: 50px;
+    height: 30px;
     background-color: #000000;
   }
 
@@ -32,6 +32,8 @@
     button {
       color: #85939f;
       margin-right: 5px;
+      position: relative;
+      top: -2px;
     }
   }
 
@@ -86,6 +88,7 @@
 
     &-nav {
       height: 100%;
+
     }
 
     .nav-item {
@@ -110,7 +113,6 @@
 
   .home {
     @include border-top(#ffae00);
-
   }
 
   .typography {
