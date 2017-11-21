@@ -2,23 +2,22 @@
 
   height: 450px;
 
-  &-title {
-    color: #3b4954;
-    font: 300 36px $font;
-    @include separator(#eeeeee);
+  @include title(#eeeeee, #3b4954);
 
-    @media (max-width: $sm) {
-      font: 300 30px $font;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &-content {
     font: 300 18px/30px $font;
     color: #3b4954;
     margin: 50px 0;
+    max-width: 740px;
 
     @media (max-width: $sm) {
-      font: 300 15px/20px $font;
+      line-height: 25px;
       margin: 30px 0;
     }
   }
@@ -27,4 +26,112 @@
     @include make-button(15px, 15px);
   }
 
+}
+
+.works {
+  min-height: 100vh;
+
+  background: grey; // change by img
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include title(#fff, #fff);
+
+  &-content {
+    color: #fff;
+    font: 300 18px/30px $font;
+    max-width: 740px;
+  }
+
+  &-item {
+
+    position: relative;
+
+    .actions {
+      display: none;
+      align-self: center;
+      position: absolute;
+    }
+
+    .example {
+      object-fit: cover;
+    }
+
+    &-data {
+      align-self: flex-end;
+      position: absolute;
+      bottom: 20px;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 250px;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+          color: #fff;
+          font: 300 14px $font;
+          margin: 0 0 5px !important;
+        }
+
+        &-category {
+          color: #02baab;
+          font: 300 11px $font;
+          margin: 0 !important;
+        }
+      }
+
+      .likes {
+        &::before {
+          content: "";
+          background: url("../../../img/likes.png");
+          display: block;
+          width: 14px;
+          height: 12px;
+          margin-bottom: 5px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #02baab;
+        font: 300 11px $font;
+      }
+    }
+
+    &:hover { // rewrite for img
+
+      .works-item-data {
+        display: none;
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: column;
+
+        .like, .more, .chain{
+          border: none;
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #02baab;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .like, .more {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

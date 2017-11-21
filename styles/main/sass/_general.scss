@@ -50,3 +50,15 @@ $lg: 991px;
     }
   }
 }
+
+@mixin title($bg-color, $color) {
+  &-title {
+    color: $color;
+    font: 300 36px $font;
+    @include separator($bg-color);
+
+    @media (max-width: $sm) {
+      font: 300 30px $font;
+    }
+  }
+}
