@@ -41,10 +41,23 @@
 
   @include title(#fff, #fff);
 
+  &-title {
+    margin-top: 75px;
+    @media (max-width: $lg) {
+      margin-top: 50px;
+    }
+  }
+
   &-content {
     color: #fff;
     font: 300 18px/30px $font;
     max-width: 740px;
+    margin: 50px 0;
+
+    @media (max-width: $sm) {
+      line-height: 25px;
+      margin: 30px 0;
+    }
   }
 
   &-item {
@@ -132,6 +145,34 @@
           margin-bottom: 10px;
         }
       }
+    }
+  }
+  .control {
+    button {
+      background: none;
+      border: none;
+
+      &:first-child {
+        margin-right: 35px;
+      }
+    }
+    margin-bottom: 75px;
+
+    @media (max-width: $lg) {
+      display: none;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .resp-more {
+    display: none;
+    @include make-button(15px,15px);
+    margin-bottom: 75px;
+
+    @media (max-width: $lg) {
+      display: block;
+      margin-bottom: 50px;
     }
   }
 }
