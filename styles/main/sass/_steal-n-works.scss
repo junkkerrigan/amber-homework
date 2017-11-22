@@ -65,9 +65,11 @@
     position: relative;
 
     @media (max-width: $lg) {
+
       &:nth-child(n+1) {
         margin-top: 20px;
       }
+
     }
 
     .actions {
