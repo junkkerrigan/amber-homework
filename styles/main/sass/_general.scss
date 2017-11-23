@@ -2,6 +2,11 @@ $font: Oxygen, Helvetica, Georgia, sans-serif;
 $sm: 575px;
 $md: 767px;
 $lg: 991px;
+$xl: 1439px;
+$diameter: 200px;
+$accent: #fff;
+$gray: #35c8bc;
+$border: 5px;
 
 
 
@@ -63,6 +68,59 @@ a, button {
 
     @media (max-width: $sm) {
       font: 300 30px $font;
+    }
+  }
+}
+
+@mixin make-progressbar($angle) {
+  .progressbar {
+    position: relative;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    background-color: $accent;
+    &::before {
+      position: absolute;
+      content: '';
+      @if $angle > 180 {
+        background-color: $accent;
+      }
+      @if $angle <= 180 {
+        background-color: $gray;
+      }
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      @if $angle <= 180 {
+        transform: rotate(#{180 + $angle}deg);
+      }
+      @if $angle > 180 {
+        transform: rotate(#{180 + $angle - 180}deg);
+      }
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: $gray;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+    }
+    .center {
+      position: absolute;
+      top: $border;
+      left: $border;
+      width: #{$diameter - 2 * $border};
+      height: #{$diameter - 2 * $border};
+      background-color: #02baab;
+      border-radius: 50%;
+      z-index: 2;
     }
   }
 }
