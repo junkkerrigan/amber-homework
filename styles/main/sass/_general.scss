@@ -12,6 +12,10 @@ $lg: 991px;
   text-decoration: none;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 @mixin make-button($px, $py) {
   background-color: inherit;
   border: 2px solid #02baab;
