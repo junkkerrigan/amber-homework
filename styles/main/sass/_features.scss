@@ -1,5 +1,7 @@
 .features {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 
   @include title(#eeeeee, #3b4954);
 
@@ -15,6 +17,21 @@
 
     li {
       margin-top: 60px;
+      display: flex;
+
+      @media (max-width: $lg) {
+        justify-content: center;
+      }
+    }
+
+    .wrapper {
+      max-width: 360px;
+      margin-left: 40px;
+
+      @media (max-width: $md) {
+        margin-left: 20px;
+        max-width: 200px;
+      }
     }
 
     &-title {
@@ -25,26 +42,14 @@
     &-content {
       color: #3b4954;
       font: 300 14px/24px $font;
-      margin: 0 20px 0 60px;
-      max-width: 400px;
     }
   }
-
-  .doc {
-    margin-left: 55px;
-  }
-
-  h3 {
-    display: flex;
-  }
-
   .design::before {
     content: "";
     background: url("../../../img/brilliant.png");
     width: 39px;
     height: 39px;
     display: block;
-    margin-right: 20px;
   }
 
   .on-mouse::before {
@@ -53,7 +58,6 @@
     width: 36px;
     height: 33px;
     display: block;
-    margin-right: 20px;
   }
 
   .documentation::before {
@@ -62,7 +66,6 @@
     width: 32px;
     height: 32px;
     display: block;
-    margin-right: 20px;
   }
 
   .responsive::before {
@@ -71,6 +74,5 @@
     width: 41px;
     height: 26px;
     display: block;
-    margin-right: 20px;
   }
 }
