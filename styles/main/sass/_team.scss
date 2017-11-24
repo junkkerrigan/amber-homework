@@ -3,83 +3,95 @@
 
   @include title(#eee, #3b4954);
 
+  @media (max-width: $lg) {
+    padding: 50px 0;
+  }
+
+  &-wrapper {
+    border: 1px solid #eee;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media (max-width: $lg) {
+      margin-bottom: 20px;
+    }
+  }
+
+
   &-list {
 
     margin-top: 50px;
 
-    li {
-      position: relative;
-    }
-
-    img {
-      position: absolute;
-      z-index: -1;
-    }
-
-    .team-wrapper {
-      height: 380px;
-      width: 210px;
-      border: 1px solid #eee;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .slider {
-      display: flex;
-      flex-direction: column;
-      width: 210px;
-      align-items: center;
-      margin-top: 160px;
-      background-color: #fff;
-      height: 130px;
-      transition: all 1s;
-
-      &:hover {
-        height: 0;
-
-        .teammate-info {
-          height: 0;
-          padding: 0;
-        }
-      }
-    }
-
     .teammate-info {
       border: 1px solid #eee;
-      width: 140px;
-      padding: 10px;
       text-align: center;
       background-color: #fff;
-      margin-top: -30px;
-      transition: all 1s;
 
       &-name {
         color: #02baab;
         font: 400 14px/18px $font;
-        margin-bottom: 0;
+        opacity: 1;
       }
 
       &-position {
         color: #c4c4c4;
         font: 400 12px/18px $font;
-        margin-bottom: 0;
+        opacity: 1;
+      }
+
+    }
+
+    .slider-wrapper {
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+
+        .slider {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+
+        .teammate-info {
+          opacity: 0;
+        }
       }
     }
 
     &-content {
       color: #3b4954;
       font: 300 12px/24px $font;
-      max-width: 160px;
       text-align: center;
-      margin-bottom: 0;
-      margin-top: 30px;
+    }
+  }
+
+  .slider {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    padding: 50px 20px 0;
+    transition: all 0.5s ease-out;
+    bottom: 0;
+    transform: translateY(0);
+
+    .teammate-info {
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translate(-50%, -15%);
+      background-color: #fff;
+      border: 1px solid #eee;
+      width: 136px;
+      padding: 8px 0;
+      transition: all 0.5s ease-out;
     }
   }
 
   &-more {
     @include make-button(40px, 15px);
-    position: absolute;
-    bottom: 30px;
+    margin: 30px 0;
     align-self: center;
   }
 }

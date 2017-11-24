@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
 
+  padding: 50px 0;
+
   @include title(#eee,#3b4954);
 
   &-title {
@@ -68,6 +70,10 @@
       .learn-more {
         font: 300 14px/24px $font;
         color: #02baab;
+
+        &:hover {
+          text-decoration: none;
+        }
       }
 
       .comments {
