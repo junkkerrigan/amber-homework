@@ -53,6 +53,20 @@ a, button {
   }
 }
 
+@mixin border-top($color) {
+  border-top: 10px solid $color;
+
+  @media (max-width: $lg) {
+    border-left: 5px solid $color;
+    border-top: none;
+  }
+
+  &:hover {
+    background-color: $color;
+    transition: 1s;
+  }
+}
+
 @mixin separator($bg-color) {
   &::after {
     content: "";
