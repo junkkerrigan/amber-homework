@@ -32,14 +32,14 @@
     width: 8px;
     height: 8px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: $white;
 
     &:nth-child(n+1) {
       margin-left: 10px;
     }
 
     &.active {
-      background-color: #02baab;
+      background-color: $main-green;
     }
   }
 
@@ -48,7 +48,7 @@
   }
 
   &-content {
-    color: #fff;
+    color: $white;
     font: 300 24px/30px $font;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
   }
 
   &-author {
-    color: #02baab;
+    color: $main-green;
     font: 700 14px/18px Lato, serif;
     text-transform: uppercase;
 

@@ -2,7 +2,7 @@
 
   height: 450px;
 
-  @include title(#eeeeee, #3b4954);
+  @include title($sep-light-bg, $h-light-font);
 
   .container {
     display: flex;
@@ -12,7 +12,7 @@
 
   &-content {
     font: 300 18px/30px $font;
-    color: #3b4954;
+    color: $h-light-font;
     margin: 50px 0;
     max-width: 740px;
 

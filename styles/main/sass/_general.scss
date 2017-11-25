@@ -15,6 +15,13 @@ $ytb-bg: #c4302b;
 $inst-bg: #825c48;
 $pin-bg: #a30834;
 
+$main-green: #02baab;
+$header-black: #85939f;
+$sep-light-bg: #eee;
+$h-light-font: #3b4954;
+$white: #fff;
+$black: #000;
+
 
 
 * {
@@ -29,18 +36,18 @@ a, button {
 }
 
 @mixin make-button($px, $py) {
-  background-color: inherit;
-  border: 2px solid #02baab;
+  background-color: transparent;
+  border: 2px solid $main-green;
   font: 700 12px $font;
-  color: #02baab;
+  color: $main-green;
   padding: $py $px;
   text-transform: uppercase;
   letter-spacing: 0.9px;
   border-radius: 0;
 
   &:hover {
-    background-color: #02baab;
-    border: inherit;
+    background-color: $main-green;
+    border: 2px solid $main-green;
   }
 }
 
@@ -139,7 +146,7 @@ a, button {
       left: $border;
       width: #{$diameter - 2 * $border};
       height: #{$diameter - 2 * $border};
-      background-color: #02baab;
+      background-color: $main-green;
       border-radius: 50%;
       z-index: 2;
     }

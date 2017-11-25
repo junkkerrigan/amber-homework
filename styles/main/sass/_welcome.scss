@@ -4,7 +4,7 @@
   margin-top: 80px;
 
   &-title {
-    color: #02baab;
+    color: $main-green;
     font-family: $font;
     font-size: 60px;
     font-weight: 300;
@@ -16,7 +16,7 @@
   }
 
   .sub {
-    color: #fff;
+    color: $white;
     margin-top: 10px;
 
     @media (max-width: $sm) {
@@ -28,7 +28,7 @@
     z-index: 1;
   }
 
-  a {
+  &-button {
 
     @include make-button(15px, 15px);
 
@@ -66,10 +66,10 @@
   }
 
   .carousel-indicators li {
-    background-color: #fff;
+    background-color: $white;
 
     &.active {
-      background-color: #02baab;
+      background-color: $main-green;
     }
   }
 

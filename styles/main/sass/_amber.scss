@@ -1,6 +1,6 @@
 .amber {
 
-  background-color: #02baab;
+  background-color: $main-green;
   padding: 50px 0;
 
   .container {
@@ -14,16 +14,16 @@
 
 
   &-title {
-    color: #fff;
+    color: $white;
     font: 300 24px $font;
   }
 
   &-purchase {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid $white;
+    color: $white;
     display: flex;
     align-items: center;
-    background-color: #02baab;
+    background-color: $main-green;
     border-radius: 0;
     text-transform: uppercase;
     font: 700 12px $font;
@@ -32,7 +32,7 @@
 
     &:hover {
       background: inherit;
-      border: 2px solid #fff;
+      border: 2px solid $white;
     }
 
     @media (max-width: $lg) {
