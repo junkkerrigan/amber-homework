@@ -1,0 +1,41 @@
+.content-sidebar {
+
+  padding-top: 50px;
+
+  .categories {
+
+    @include sidebar-title();
+
+    &-item {
+      padding: 15px 40px 15px 0;
+      border-bottom: 1px solid #edeeef;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &-link {
+      color: $main-green;
+      font: 300 12px $font;
+      display: flex;
+
+      &:hover {
+        color: $highlighted;
+        text-decoration: none;
+      }
+
+      &::before {
+        content: "";
+        background: url("../../../img/categories-flag.png");
+        width: 14px;
+        height: 11px;
+        display: block;
+        margin: 2px 15px 0 0;
+
+      }
+    }
+
+  }
+
+}

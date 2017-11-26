@@ -54,9 +54,13 @@
 
   }
 
-  article:last-of-type {
-    border-bottom: 1px solid #eaebec;
-    padding-bottom: 15px;
+  article  {
+    &:last-of-type {
+      border-bottom: 1px solid #eaebec;
+      padding-bottom: 15px;
+    }
+
+    max-width: 690px;
   }
 
   &-tags {
@@ -102,6 +106,6 @@
       }
     }
 
-
   }
+
 }

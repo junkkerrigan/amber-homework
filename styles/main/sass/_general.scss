@@ -24,6 +24,8 @@ $h-light-font: #3b4954;
 $white: #fff;
 $black: #000;
 $content-quote: #c69c6d;
+$sidebar-title: #474d52;
+$highlighted: #6d0fae;
 
 
 
@@ -154,4 +156,14 @@ a, button {
       z-index: 2;
     }
   }
+}
+
+@mixin sidebar-title {
+
+  &-title {
+    color: $sidebar-title;
+    font: 700 18px $font;
+    margin-bottom: 20px;
+  }
+
 }
