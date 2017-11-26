@@ -125,4 +125,20 @@ ul {
   }
 }
 
+.blog {
+
+  &-list {
+    &-item {
+      margin-bottom: 30px;
+    }
+    margin-top: 0;
+  }
+
+  &-border {
+    margin-top: 0;
+  }
+}
+
+
+
 
