@@ -1,3 +1,5 @@
 .idea
 node_modules
 styles/main/stylesheets
+styles/blog-grid/stylesheets
+styles/blog-single/stylesheets
