@@ -174,14 +174,14 @@
 
     </section>
 
-    <div class="d-flex align-items-center flex-column">
+    <div class="d-flex flex-column align-items-center">
 
-        <div class="container row">
+        <div class="container row justify-content-center">
 
             <section class="content col-lg-9 col-12">
 
                 <img src="../img/blog-single-main.jpg" alt="main image"
-                     class="content-main-image" width="690" height="520">
+                     class="content-main-image" width="690">
 
                 <article>
 
@@ -362,43 +362,43 @@
 
                 </section>
 
-                <section class="comments">
+                <section class="rcomments">
 
                     <h4 class="sidebar-title">Recent comments</h4>
 
-                    <ul class="comments-list">
+                    <ul class="rcomments-list">
 
-                        <li class="comments-item">
+                        <li class="rcomments-item">
 
-                            <span class="comments-author">
+                            <span class="rcomments-author">
                                 Igor Ligay
                             </span>
 
-                            <a href="#" class="comments-target">
+                            <a href="#" class="rcomments-target">
                                 The hope of a young naval lieutenant bravely patrolling
                             </a>
 
                         </li>
 
-                        <li class="comments-item">
+                        <li class="rcomments-item">
 
-                            <span class="comments-author">
+                            <span class="rcomments-author">
                                 Farhad Yusupov
                             </span>
 
-                            <a href="#" class="comments-target">
+                            <a href="#" class="rcomments-target">
                                 Politicians routinely exploited fears of crime
                             </a>
 
                         </li>
 
-                        <li class="comments-item">
+                        <li class="rcomments-item">
 
-                            <span class="comments-author">
+                            <span class="rcomments-author">
                                 John Doe
                             </span>
 
-                            <a href="#" class="comments-target">
+                            <a href="#" class="rcomments-target">
                                 There was even a time when the Christian Coalition
                                 determined that its number one
                             </a>
@@ -517,7 +517,7 @@
 
                 <ul class="related-list row">
 
-                    <li class="related-item col-4">
+                    <li class="related-item col-sm-12 col-md-4">
 
                         <span class="related-date">June 24</span>
 
@@ -527,7 +527,7 @@
 
                     </li>
 
-                    <li class="related-item col-4">
+                    <li class="related-item col-sm-12 col-md-4">
 
                         <span class="related-date">August 8</span>
 
@@ -537,7 +537,7 @@
 
                     </li>
 
-                    <li class="related-item col-4">
+                    <li class="related-item col-sm-12 col-md-4">
 
                         <span class="related-date">August 13</span>
 
@@ -554,20 +554,417 @@
 
         </section>
 
-        <section class="comments">
+        <section class="comments container row">
 
-            <div class="container row">
+            <div class="col-lg-9 col-12">
 
-                <div class="col-lg-9 col-12">
+                <form class="ncomment-form row" action="#" method="post"> <!--ncomment==new comment-->
 
+                    <h4 class="ncomment-form-title"></h4>
 
-                </div>
+                    <label class="col-md-4">
+                        Name
+                        <input type="text" name="user-name" >
+                    </label>
+
+                    <label class="col-md-4">
+                        Email
+                        <input type="email" name="user-email">
+                    </label>
+
+                    <label class="col-md-4">
+                        Website
+                        <span class="little">(optional)</span>
+                        <input type="text" name="user-website">
+                    </label>
+
+                    <label class="col-12 message-label">
+                        Message
+                        <textarea name="user-message"></textarea>
+                    </label>
+
+                    <button type="submit" class="ncomment-form-submit">
+                        add comment
+                    </button>
+
+                </form>
+
+                <section class="ocomments"> <!-- ocomments==old comments-->
+
+                    <h4 class="ocomments-title">24 comments</h4>
+
+                    <ul class="ocomments-list">
+
+                        <li class="ocomments-item">
+
+                            <button type="button" class="ocomments-reply">
+                                Reply
+                            </button>
+
+                            <div class="ocomments-item-data">
+
+                                <a href="#" class="ocomment-author">
+                                    Administrator
+                                </a>
+
+                                <div class="ocomment-datetime">
+
+                                    <span>
+                                        September 17,2013
+                                    </span>
+
+                                    <span>
+                                        1:38 pm
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="ocomments-item-content">
+                                Small batch sartorial, single-origin coffee
+                                food truck tousled sed swag hella synth
+                                bitters next level consectetur Helvetica
+                                twee. Craft beer ea tofu sint reprehenderit
+                                cornhole, occaecat put a bird on it
+                                single-origin coffee Tonx. Small batch 3 wolf
+                                moon ad, adipisicing fap cornhole.
+                            </p>
+
+                        </li>
+
+                        <li class="ocomments-item answer">
+
+                            <button type="button" class="ocomments-reply">
+                                Reply
+                            </button>
+
+                            <div class="ocomments-item-data">
+
+                                <a href="#" class="ocomment-author">
+                                    Alina
+                                </a>
+
+                                <div class="ocomment-datetime">
+
+                                    <span>
+                                        September 17,2013
+                                    </span>
+
+                                    <span>
+                                        1:38 pm
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="ocomments-item-content">
+                                Small batch sartorial, single-origin coffee
+                                food truck tousled sed swag hella synth
+                                bitters next level consectetur Helvetica
+                                twee. Craft beer ea tofu sint reprehenderit
+                                cornhole, occaecat put a bird on it
+                                single-origin coffee Tonx. Small batch 3 wolf
+                                moon ad, adipisicing fap cornhole.
+                            </p>
+
+                        </li>
+
+                        <li class="ocomments-item">
+
+                            <button type="button" class="ocomments-reply">
+                                Reply
+                            </button>
+
+                            <div class="ocomments-item-data">
+
+                                <a href="#" class="ocomment-author">
+                                    Administrator
+                                </a>
+
+                                <div class="ocomment-datetime">
+
+                                    <span>
+                                        September 17,2013
+                                    </span>
+
+                                    <span>
+                                        1:38 pm
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <p class="ocomments-item-content">
+                                Small batch sartorial, single-origin coffee
+                                food truck tousled sed swag hella synth
+                                bitters next level consectetur Helvetica
+                                twee. Craft beer ea tofu sint reprehenderit
+                                cornhole, occaecat put a bird on it
+                                single-origin coffee Tonx. Small batch 3 wolf
+                                moon ad, adipisicing fap cornhole.
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </section>
 
             </div>
 
         </section>
 
     </div>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <ul class="footer-list row">
+
+                <li class="footer-list-item col-12 col-md-6 col-lg-3 touch">
+
+                    <h3 class="footer-item-title">Get in touch</h3>
+
+                    <address>
+
+                        <ul>
+
+                            <li>
+
+                                <p class="touch-item">
+
+                                    <img src="../img/flag.png">
+                                    <span class="touch-item-title">Address: </span>
+                                    321 Street Name, United Kingdom, London
+
+                                </p>
+
+                            </li>
+
+                            <li>
+
+                                <p class="touch-item">
+
+                                    <i class="fa fa-phone"></i>
+                                    <span class="touch-item-title">Phone: </span>
+                                    +7 998 71 150 30 20
+
+                                </p>
+
+                            </li>
+
+                            <li>
+
+                                <p class="touch-item">
+
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="touch-item-title">Email: </span>
+                                    info@ambertheme.com
+
+                                </p>
+
+                            </li>
+
+                        </ul>
+
+                        <img src="../img/map.png">
+
+                    </address>
+
+                </li>
+
+                <li class="footer-list-item col-12 col-md-6 col-lg-3 tweets">
+
+                    <h3 class="footer-item-title">Latest tweets</h3>
+
+                    <ul>
+
+                        <li>
+
+                            <p class="tweets-item">
+
+                                <i class="fa fa-twitter"></i>
+                                <span class="tweets-item-title">
+                                CMS Masters And Their Best Web Design Tools
+                            </span>
+                                #bestwebdesigntools #webdesign
+
+                            </p>
+
+                        </li>
+
+                        <li>
+
+                            <p class="tweets-item">
+
+                                <i class="fa fa-twitter"></i>
+                                <span class="tweets-item-title">
+                                WOOCOMMERCE functionality added!!! See Industrial
+                                theme become even powerful! -
+                            </span>
+                                bit.ly/industrial-wp
+
+                            </p>
+
+                        </li>
+
+                        <li>
+
+                            <p class="tweets-item">
+
+                                <i class="fa fa-twitter"></i>
+                                <span class="tweets-item-title">
+                                CMS Masters And Their Best Web Design Tools
+                            </span>
+                                #bestwebdesigntools #webdesign
+
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="footer-list-item col-12 col-md-6 col-lg-3 follow">
+
+                    <h3 class="footer-item-title">Follow us</h3>
+
+                    <ul class="follow-list">
+
+                        <li class="follow-list-item">
+
+                            <a href="#" class="follow-link fb">
+                                <i class="fa fa-2x fa-facebook-f"></i>
+                            </a>
+
+                            <p class="follow-list-content">
+                                Like us on Facebook
+                            </p>
+
+                        </li>
+
+                        <li class="follow-list-item">
+
+                            <a href="#" class="follow-link tw">
+                                <i class="fa fa-2x fa-twitter"></i>
+                            </a>
+
+                            <p class="follow-list-content">
+                                Follow us on Twitter
+                            </p>
+
+                        </li>
+
+                        <li class="follow-list-item">
+
+                            <a href="#" class="follow-link ytb">
+                                <i class="fa fa-2x fa-youtube"></i>
+                            </a>
+
+                            <p class="follow-list-content">
+                                Watch videos on YouTube
+                            </p>
+
+                        </li>
+
+                        <li class="follow-list-item">
+
+                            <a href="#" class="follow-link inst">
+                                <i class="fa fa-2x fa-instagram"></i>
+                            </a>
+
+                            <p class="follow-list-content">
+                                Friend us on Instagram
+                            </p>
+
+                        </li>
+
+                        <li class="follow-list-item">
+
+                            <a href="#" class="follow-link pin">
+                                <i class="fa fa-2x fa-pinterest-p"></i>
+                            </a>
+
+                            <p class="follow-list-content">
+                                Repin on Pinterest
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="footer-list-item col-12 col-md-6 col-lg-3 posts">
+
+                    <h3 class="footer-item-title">Popular posts</h3>
+
+                    <ul class="posts-list">
+
+                        <li>
+
+                            <p class="posts-list-title">September, 30</p>
+                            <p class="posts-list-content">
+                                Candy canes dragée pudding. Donut cheesecake I
+                                love chocolate icing
+                            </p>
+
+                        </li>
+
+                        <li>
+
+                            <p class="posts-list-title">April, 22</p>
+                            <p class="posts-list-content">
+                                Muffin croissant cookie sesame snaps. Ice cream
+                                donut cookie gingerbread
+                            </p>
+
+                        </li>
+
+                        <li>
+
+                            <p class="posts-list-title">May, 12</p>
+                            <p class="posts-list-content">
+                                Cotton candy muffin tart gummies candy danish
+                                liquorice chupa chups tootsie roll
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <footer>
+
+                <address>
+
+                    <p class="copyright">
+                        © 2014 StylemixThemes. All rights reserved.
+                    </p>
+                    <p class="copyright">
+                        Powered by WordPress.
+                    </p>
+
+                </address>
+
+                <a href="#" class="go-top">
+                    Back to top of page
+                    <i class="fa fa-angle-up fa-2x"></i>
+                </a>
+
+            </footer>
+
+        </div>
+
+    </footer>
 
 </body>
 
