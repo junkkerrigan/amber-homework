@@ -53,6 +53,33 @@
         object-fit: cover;
       }
 
+      &:hover { // rewrite for img
+
+        .works-list-data {
+          display: none;
+        }
+
+        .actions {
+          display: flex;
+          flex-direction: column;
+
+          .like, .more, .chain{
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: $main-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .like, .more {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
     }
 
     &-data {
@@ -100,34 +127,8 @@
         font: 300 11px $font;
       }
     }
-
-    &:hover { // rewrite for img
-
-      .works-item-data {
-        display: none;
-      }
-
-      .actions {
-        display: flex;
-        flex-direction: column;
-
-        .like, .more, .chain{
-          border: none;
-          width: 40px;
-          height: 40px;
-          border-radius: 20px;
-          background-color: $main-green;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .like, .more {
-          margin-bottom: 10px;
-        }
-      }
-    }
   }
+
   .control {
     button {
       background: none;

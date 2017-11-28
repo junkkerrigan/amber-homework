@@ -3,3 +3,5 @@ node_modules
 styles/main/stylesheets
 styles/blog-grid/stylesheets
 styles/blog-single/stylesheets
+styles/portfolio-grid/stylesheets
+styles/portfolio-single/stylesheets

@@ -1,1 +1,1 @@
-to compile: `compass watch` in `styles\main`
+to compile: `compass watch` in `styles\<page-name>`, for example `styles\main`
