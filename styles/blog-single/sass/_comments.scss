@@ -1,5 +1,9 @@
 .comments {
-  background-color: #ebf0f3;
+
+  &-wrapper {
+    background-color: #ebf0f3;
+  }
+
   padding-bottom: 100px;
 
   .ncomment-form {
