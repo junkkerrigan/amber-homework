@@ -1,3 +1,75 @@
+.fixed-header {
+
+  &-tool {
+    color: #85939f;
+    font: 300 11px $font;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $md) {
+      font-size: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #85939f;
+    }
+
+    &.account::before {
+      content: "";
+      background: url("../../../img/login-icon.png");
+      width: 14px;
+      height: 13px;
+      margin: 0 5px 0 30px;
+
+      @media (max-width: $md) {
+        margin: 0 5px 0 10px;
+      }
+    }
+
+    &.wishlist::before {
+      content: "";
+      background: url("../../../img/wishlist.png");
+      width: 15px;
+      height: 13px;
+      margin: 0 5px 0 30px;
+
+      @media (max-width: $md) {
+        margin: 0 5px 0 10px;
+      }
+    }
+
+    &.logout::before {
+      content: "";
+      background: url("../../../img/logout.png");
+      width: 12px;
+      height: 13px;
+      margin: 0 5px 0 30px;
+
+      @media (max-width: $md) {
+        margin: 0 5px 0 10px;
+      }
+    }
+
+    &.basket {
+      font-size: 12px;
+
+      @media (max-width: $md) {
+        font-size: 0;
+      }
+
+      &::after {
+        content: "";
+        background: url("../../../img/basket.png");
+        width: 17px;
+        height: 14px;
+        margin-left: 5px;
+      }
+    }
+
+  }
+}
+
 .works {
   background-color: $white;
   padding: 50px 0 100px;
