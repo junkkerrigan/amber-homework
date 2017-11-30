@@ -91,16 +91,7 @@ a, button {
   color: #85939f;
   text-decoration: none;
 }
-@media (max-height: 991px) {
-  /* line 83, ../sass/_header.scss */
-  .fixed-header-logo img {
-    height: 40px;
-    object-fit: cover;
-    position: relative;
-    top: -5px;
-  }
-}
-/* line 92, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 .fixed-header .navbar {
   padding: 0;
   height: 100%;
@@ -108,31 +99,31 @@ a, button {
   display: flex;
   justify-content: space-between;
 }
-/* line 100, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 .fixed-header .navbar-nav {
   align-items: flex-end;
   height: 100%;
 }
 @media (max-width: 991px) {
-  /* line 100, ../sass/_header.scss */
+  /* line 91, ../sass/_header.scss */
   .fixed-header .navbar-nav {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
   }
 }
-/* line 111, ../sass/_header.scss */
+/* line 102, ../sass/_header.scss */
 .fixed-header .navbar-collapse {
   justify-content: flex-end;
   height: 100%;
 }
 @media (max-width: 991px) {
-  /* line 111, ../sass/_header.scss */
+  /* line 102, ../sass/_header.scss */
   .fixed-header .navbar-collapse {
     height: auto;
   }
 }
-/* line 120, ../sass/_header.scss */
+/* line 111, ../sass/_header.scss */
 .fixed-header .navbar .nav-item {
   height: 100%;
   width: 90px;
@@ -140,7 +131,7 @@ a, button {
   justify-content: center;
   align-items: center;
 }
-/* line 128, ../sass/_header.scss */
+/* line 119, ../sass/_header.scss */
 .fixed-header .navbar .nav-link {
   color: #fff;
   font-family: Oxygen, Helvetica, Georgia, sans-serif;
@@ -152,17 +143,17 @@ a, button {
   padding: 0;
 }
 @media (max-width: 991px) {
-  /* line 128, ../sass/_header.scss */
+  /* line 119, ../sass/_header.scss */
   .fixed-header .navbar .nav-link {
     color: #02baab;
   }
 }
-/* line 144, ../sass/_header.scss */
+/* line 135, ../sass/_header.scss */
 .fixed-header .home {
   border-top: 10px solid #ffae00;
 }
 @media (max-width: 991px) {
-  /* line 144, ../sass/_header.scss */
+  /* line 135, ../sass/_header.scss */
   .fixed-header .home {
     border-left: 5px solid #ffae00;
     border-top: none;
@@ -173,12 +164,12 @@ a, button {
   background-color: #ffae00;
   transition: 1s;
 }
-/* line 148, ../sass/_header.scss */
+/* line 139, ../sass/_header.scss */
 .fixed-header .typography {
   border-top: 10px solid #fc7100;
 }
 @media (max-width: 991px) {
-  /* line 148, ../sass/_header.scss */
+  /* line 139, ../sass/_header.scss */
   .fixed-header .typography {
     border-left: 5px solid #fc7100;
     border-top: none;
@@ -189,12 +180,12 @@ a, button {
   background-color: #fc7100;
   transition: 1s;
 }
-/* line 152, ../sass/_header.scss */
+/* line 143, ../sass/_header.scss */
 .fixed-header .blogposts {
   border-top: 10px solid #e51c5e;
 }
 @media (max-width: 991px) {
-  /* line 152, ../sass/_header.scss */
+  /* line 143, ../sass/_header.scss */
   .fixed-header .blogposts {
     border-left: 5px solid #e51c5e;
     border-top: none;
@@ -205,12 +196,12 @@ a, button {
   background-color: #e51c5e;
   transition: 1s;
 }
-/* line 156, ../sass/_header.scss */
+/* line 147, ../sass/_header.scss */
 .fixed-header .pages {
   border-top: 10px solid #ae0f8d;
 }
 @media (max-width: 991px) {
-  /* line 156, ../sass/_header.scss */
+  /* line 147, ../sass/_header.scss */
   .fixed-header .pages {
     border-left: 5px solid #ae0f8d;
     border-top: none;
@@ -221,12 +212,12 @@ a, button {
   background-color: #ae0f8d;
   transition: 1s;
 }
-/* line 160, ../sass/_header.scss */
+/* line 151, ../sass/_header.scss */
 .fixed-header .elements {
   border-top: 10px solid #6d0fae;
 }
 @media (max-width: 991px) {
-  /* line 160, ../sass/_header.scss */
+  /* line 151, ../sass/_header.scss */
   .fixed-header .elements {
     border-left: 5px solid #6d0fae;
     border-top: none;
@@ -237,12 +228,12 @@ a, button {
   background-color: #6d0fae;
   transition: 1s;
 }
-/* line 164, ../sass/_header.scss */
+/* line 155, ../sass/_header.scss */
 .fixed-header .eccomerse {
   border-top: 10px solid #33227a;
 }
 @media (max-width: 991px) {
-  /* line 164, ../sass/_header.scss */
+  /* line 155, ../sass/_header.scss */
   .fixed-header .eccomerse {
     border-left: 5px solid #33227a;
     border-top: none;
@@ -253,12 +244,12 @@ a, button {
   background-color: #33227a;
   transition: 1s;
 }
-/* line 168, ../sass/_header.scss */
+/* line 159, ../sass/_header.scss */
 .fixed-header .menu {
   border-top: 10px solid #0c8fcc;
 }
 @media (max-width: 991px) {
-  /* line 168, ../sass/_header.scss */
+  /* line 159, ../sass/_header.scss */
   .fixed-header .menu {
     border-left: 5px solid #0c8fcc;
     border-top: none;

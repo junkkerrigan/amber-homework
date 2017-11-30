@@ -80,15 +80,6 @@
 
   }
 
-  &-logo img {
-    @media (max-height: $lg) {
-      height: 40px;
-      object-fit: cover;
-      position: relative;
-      top: -5px;
-    }
-  }
-
   .navbar {
 
     padding: 0;
